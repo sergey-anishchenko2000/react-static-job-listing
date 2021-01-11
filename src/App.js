@@ -10,7 +10,7 @@ function App() {
  
   const [tags, setTags] = useState([]);
   const filterAction = (tags) => {
-    tags.map((tag, index) => tags[index] =  tag.toLowerCase());
+    // tags.map((tag, index) => tags[index] =  tag.toLowerCase());
     setTags(tags);
   };
 
@@ -48,16 +48,17 @@ function App() {
                 ];
 
                 return tags.length === 0 ||         
-                  tags.every(tag => 
-                    matchedTags.map((mt)=> mt.toLowerCase())
-                    .indexOf(tag.toLowerCase()) !== -1);
-                  }).map(item => 
-                    (
-                        <div key={`items-inst-${item.id}`}>
-                          <PersoninfoBox item={item}  appendTag={appendTag} />
-                        </div>
-                      )
-                  )
+                  tags.map((tag) => tag.toLowerCase()).
+                    every(tag => 
+                      matchedTags.map((mt)=> mt.toLowerCase())
+                      .indexOf(tag.toLowerCase()) !== -1);
+                    }).map(item => 
+                      (
+                          <div key={`items-inst-${item.id}`}>
+                            <PersoninfoBox item={item}  appendTag={appendTag} />
+                          </div>
+                        )
+                    )
             }
           </div>
         </div>

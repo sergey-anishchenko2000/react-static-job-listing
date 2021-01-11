@@ -1,6 +1,7 @@
 import React from "react";
+
 import ReactTagInput from "@pathofdev/react-tag-input";
-import "./index.css";
+import "./filterbox.css";
 
 function Filterbox(props) {
     
@@ -23,7 +24,6 @@ function Filterbox(props) {
                 readOnly = {false}
                 removeOnBackspace = {true}
                 onChange = {filterUpdated}
-                placeholder={"Type..."}
             />
             <button className="clear-btn" onClick={clearAll}>Clear</button>
         </>

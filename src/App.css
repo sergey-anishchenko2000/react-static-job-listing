@@ -10,7 +10,7 @@
 
 body{
   font-family: 'Spartan', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   background-color: var(--bg-light-cyan);
 }
 
@@ -116,6 +116,7 @@ body{
 .clear-btn {
   background-color: white;
   border: none;
+  outline: none;
   padding-right: 1.5rem;
   color: var(--primary-dark-cyan);
   font-weight: 500; 

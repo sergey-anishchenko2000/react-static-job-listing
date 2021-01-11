@@ -1,0 +1,43 @@
+.react-tag-input {
+    padding: 0.5em 1.5em !important;
+    border-radius: 0 !important;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    border: none !important;
+    font-size: 1em!important;
+}
+
+.react-tag-input>* {
+    margin: 0.5em!important;
+}
+
+.react-tag-input__tag {
+    font-size: 1em !important;
+    background: hsl(180, 38%, 95%) !important;
+    font-weight: 700;
+}
+
+.react-tag-input__tag__content {
+    margin: 5px 10px;
+    color: hsl(180, 29%, 50%);
+}
+
+.react-tag-input__tag__remove {
+    background: hsl(180, 29%, 50%)!important;
+}
+
+.react-tag-input__tag__remove:before, .react-tag-input__tag__remove:after {
+    background-color: #fff !important;    
+}
+
+.react-tag-input__tag__remove:hover {
+    background-color: black;
+}
+
+@media only screen and (max-width:576px) {
+    .react-tag-input {
+        padding: 0.5rem 1rem;
+    }
+}
+
+/*# sourceMappingURL=index.css.map */
