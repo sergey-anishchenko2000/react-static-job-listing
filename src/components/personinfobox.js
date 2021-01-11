@@ -9,7 +9,7 @@ function PersoninfoBox(props) {
         <div className={`d-flex justify-content-center align-items-center position-relative info-box responsive-container ${item.new && item.featured ? 'info-box-border' : ''}`}>
             <div className="d-flex justify-content-between w-100 flex-column flex-md-row">
                 <div className="infobox-left d-flex flex-column flex-md-row">
-                   <img src={item.logo} />
+                   <img src={item.logo} alt=""/>
                    <div className = "description d-flex flex-column">
                        <div>
                             <span className="company-box stack-font mr-3">{item.company}</span>
